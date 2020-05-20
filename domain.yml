@@ -1,0 +1,28 @@
+intents:
+  - greet
+  - goodbye
+  - find_time_zone
+  - find_time_zone_for_location
+  - city_info
+  - thanks
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_ask_location:
+  - text: "Which city do you need the time of?"
+  
+  utter_finding_time_zone:
+  - text: "Ok, gimme a sec to look up {city}'s time zone'"
+
+  utter_you_are_welcome:
+  - text: "You're welcome!"    
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
