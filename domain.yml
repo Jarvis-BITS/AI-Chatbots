@@ -6,6 +6,14 @@ intents:
   - city_info
   - thanks
 
+entities:
+  - city
+
+slots:
+  city:
+    type: text
+    auto_fill: true
+
 responses:
   utter_greet:
   - text: "Hey! How are you?"
