@@ -6,6 +6,7 @@ Note: To run this program, you must have Rasa installed(for more details visit: 
 - [ ] Add custome actions
 - [ ] Integrate API
 
+<sup><sup>*Using [YML Checker](http://www.yamllint.com/) makes life 1000x easier* :pray:</sup></sup>
   
 ## License
 Licensed under the Apache License, Version 2.0.
