@@ -1,36 +1,64 @@
-intents:
-  - greet
-  - goodbye
-  - find_time_zone
-  - find_time_zone_for_location
-  - city_info
-  - thanks
-
-entities:
-  - city
-
-slots:
-  city:
-    type: text
-    auto_fill: true
-
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_ask_location:
-  - text: "Which city do you need the time of?"
-  
-  utter_finding_time_zone:
-  - text: "Ok, gimme a sec to look up {city}'s time zone'"
-
-  utter_you_are_welcome:
-  - text: "You're welcome!"    
-
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirmative
+- thanks
+- find_time_zone
+- find_hospital
+- find_time_zone_for_location
+- city_info
+- pincode_info
+- service_info
+- unwell
+- bot_challenge
+entities:
+- city
+- pincode
+- City
+slots:
+  city:
+    type: unfeaturized
+  pincode:
+    type: text
+responses:
+  utter_greet:
+  - text: Hey!
+  - text: Hello there
+  - text: Hello!
+  utter_goodbye:
+  - text: Bye!
+  - text: Goodbye..
+  utter_ask_location:
+  - text: I can find the time zone for cities. Which city do you need the time zone
+      of?
+  utter_ask_pincode:
+  - text: Please enter the pincode of the location needed to find a hospital in
+  utter_finding_time_zone:
+  - text: Ok, give me a second to look up the time zone of {city}
+  utter_ask_hospital:
+  - text: Do you want me to look for a hospital near you?
+  utter_finding_hospital:
+  - text: Ok, gimme a second to look up the nearest hospital in {pincode}
+  utter_services:
+  - text: "You can ask me about:\n •Timezone of different cities\n •Finding Health\
+      \ centers\n •Diagnosing symptoms"
+  utter_bot_reply:
+  - text: I am Jarvis, a bot powered by rasa
+  utter_you_are_welcome:
+  - text: I am happy to help!
+  - text: Happy to be of assistance!
+actions:
+- action_find_and_show_time_zone
+- utter_greet
+- utter_goodbye
+- utter_ask_location
+- utter_ask_pincode
+- utter_finding_time_zone
+- utter_ask_hospital
+- utter_finding_hospital
+- utter_services
+- utter_bot_reply
+- utter_you_are_welcome
