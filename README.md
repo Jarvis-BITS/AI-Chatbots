@@ -3,8 +3,11 @@
 Note: To run this program, you must have Rasa installed(for more details visit: [Rasa installation](https://rasa.com/docs/rasa/user-guide/installation/))
 
 - [x] Create Indexes
-- [ ] Add custom actions
-- [ ] Integrate API
+- [x] Add custom actions
+- [x] Integrate API
+- [x] Integrate Rasa-X
+- [ ] Integrate Forms
+- [ ] Create Custom API's
 
 <sup><sup>*Using [YML Checker](http://www.yamllint.com/) makes life 1000x easier* :pray:</sup></sup>
   
