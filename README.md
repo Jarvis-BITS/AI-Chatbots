@@ -2,7 +2,7 @@
   
 Note: To run this program, you must have Rasa installed(for more details visit: [Rasa installation](https://rasa.com/docs/rasa/user-guide/installation/))
 
-#### A friendly chatbot which is able to detect your mood, uses web scraping & API's to tell you the time or location of the nearest grocery store
+#### A friendly chatbot which is able to detect your mood, uses web scraping & API's to tell you the time and also the location of the nearest grocery store
 
 - [x] Create Indexes
 - [x] Add custom actions
